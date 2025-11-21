@@ -1,0 +1,79 @@
+@FinalProject_HostAddress = http://localhost:5148
+
+### Get all TeamMembers (first 5)
+GET {{FinalProject_HostAddress}}/api/TeamMembers
+Accept: application/json
+
+###
+
+### Get specific TeamMember by id
+GET {{FinalProject_HostAddress}}/api/TeamMembers?id=1
+Accept: application/json
+
+###
+
+### Create a new TeamMember
+POST {{FinalProject_HostAddress}}/api/TeamMembers
+Content-Type: application/json
+
+{
+  "fullName": "Asher Hartman",
+  "birthdate": "2006-05-01T00:00:00",
+  "collegeProgram": "Information Technology",
+  "yearInProgram": "Sophomore"
+}
+
+### Create a new TeamMember
+POST {{FinalProject_HostAddress}}/api/TeamMembers
+Content-Type: application/json
+
+{
+  "fullName": "Josh Berger",
+  "birthdate": "2006-05-01T00:00:00",
+  "collegeProgram": "blank",
+  "yearInProgram": "blank"
+}
+
+### Create a new TeamMember
+POST {{FinalProject_HostAddress}}/api/TeamMembers
+Content-Type: application/json
+
+{
+  "fullName": "Peter Schuler",
+  "birthdate": "2006-05-01T00:00:00",
+  "collegeProgram": "blank",
+  "yearInProgram": "blank"
+}
+
+### Create a new TeamMember
+POST {{FinalProject_HostAddress}}/api/TeamMembers
+Content-Type: application/json
+
+{
+  "fullName": "Jordan Marzougui",
+  "birthdate": "2006-05-01T00:00:00",
+  "collegeProgram": "blank",
+  "yearInProgram": "blank"
+}
+
+
+###
+
+### Update a TeamMember
+PUT {{FinalProject_HostAddress}}/api/TeamMembers/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "fullName": "John Doe",
+  "birthdate": "2000-01-15T00:00:00",
+  "collegeProgram": "Computer Science",
+  "yearInProgram": "Junior"
+}
+
+###
+
+### Delete a TeamMember
+DELETE {{FinalProject_HostAddress}}/api/TeamMembers/1
+
+###
