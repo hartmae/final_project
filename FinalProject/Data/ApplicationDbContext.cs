@@ -11,5 +11,7 @@ namespace FinalProject.Data
         }
 
         public DbSet<TeamMember> TeamMembers { get; set; }
+        public DbSet<Project> Projects { get; set; }
     }
 }
+
