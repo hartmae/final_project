@@ -51,9 +51,9 @@ Content-Type: application/json
 
 {
   "fullName": "Jordan Marzougui",
-  "birthdate": "2006-05-01T00:00:00",
-  "collegeProgram": "blank",
-  "yearInProgram": "blank"
+  "birthdate": "2003-01-14T00:00:00",
+  "collegeProgram": "Information Technology",
+  "yearInProgram": "Sophomore"
 }
 
 
@@ -77,3 +77,4 @@ Content-Type: application/json
 DELETE {{FinalProject_HostAddress}}/api/TeamMembers/1
 
 ###
+
