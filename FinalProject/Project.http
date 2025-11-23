@@ -1,0 +1,56 @@
+@FinalProject_HostAddress = http://localhost:5148
+
+### Get all Projects
+GET {{FinalProject_HostAddress}}/api/Project
+Accept: application/json
+
+###
+
+### Get specific Project by id
+GET {{FinalProject_HostAddress}}/api/Project?id=1
+Accept: application/json
+
+###
+
+### Create a new Project
+POST {{FinalProject_HostAddress}}/api/Project
+Content-Type: application/json
+
+{
+  "title": "Final WebAPI Project",
+  "description": "Building a multi-table API",
+  "startDate": "2025-11-01T00:00:00",
+  "endDate": "2025-12-01T00:00:00"
+}
+
+###
+
+### Create a new Project
+POST {{FinalProject_HostAddress}}/api/Project
+Content-Type: application/json
+
+{
+  "title": "Mobile App",
+  "description": "A small Android app for testing",
+  "startDate": "2025-11-15T00:00:00",
+  "endDate": "2025-12-10T00:00:00"
+}
+
+###
+
+### Update a Project
+PUT {{FinalProject_HostAddress}}/api/Project/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Updated Project Name",
+  "description": "Updated description",
+  "startDate": "2025-11-01T00:00:00",
+  "endDate": "2025-12-01T00:00:00"
+}
+
+###
+
+### Delete a Project
+DELETE {{FinalProject_HostAddress}}/api/Project/2
