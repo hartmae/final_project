@@ -1,0 +1,80 @@
+@FinalProject_HostAddress = http://localhost:5148
+
+### Get all Foods (first 5)
+GET {{FinalProject_HostAddress}}/api/Food
+Accept: application/json
+
+###
+
+### Get specific Food by id
+GET {{FinalProject_HostAddress}}/api/Food?id=1
+Accept: application/json
+
+###
+
+### Create a new Food
+POST {{FinalProject_HostAddress}}/api/Food
+Content-Type: application/json
+
+{
+  "name": "Pancakes",
+  "type": "Breakfast",
+  "calories": 350,
+  "mainIngredient": "Milk"
+}
+
+### Create a new Food
+POST {{FinalProject_HostAddress}}/api/Food
+Content-Type: application/json
+
+{
+  "name": "Tacos",
+  "type": "Dinner",
+  "calories": 600,
+  "mainIngredient": "Beef"
+}
+
+### Create a new Food
+POST {{FinalProject_HostAddress}}/api/Food
+Content-Type: application/json
+
+{
+  "name": "Salad",
+  "type": "Lunch",
+  "calories": 200,
+  "mainIngredient": "Lettuce"
+}
+
+### Create a new Food
+POST {{FinalProject_HostAddress}}/api/Food
+Content-Type: application/json
+
+{
+  "name": "Burrito",
+  "type": "Dinner",
+  "calories": "750",
+  "mainIngredient": "Rice"
+}
+
+
+###
+
+### Update a Food
+PUT {{FinalProject_HostAddress}}/api/Food/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Pancakes",
+  "type": "Breakfast",
+  "calories": 400, // updated value
+  "isVegetarian": true,
+  "mainIngredient": "Milk"
+}
+
+###
+
+### Delete a Food
+DELETE {{FinalProject_HostAddress}}/api/Food/2
+
+###
