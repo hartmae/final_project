@@ -1,0 +1,80 @@
+@FinalProject_HostAddress = http://localhost:5148
+
+### Get all Hobbies (first 5)
+GET {{FinalProject_HostAddress}}/api/Hobby
+Accept: application/json
+
+###
+
+### Get specific Hobby by id
+GET {{FinalProject_HostAddress}}/api/Hobby?id=1
+Accept: application/json
+
+###
+
+### Create a new Hobby
+POST {{FinalProject_HostAddress}}/api/Hobby
+Content-Type: application/json
+
+{
+  "name": "Basketball",
+  "type": "Sport",
+  "timeSpent": 5,
+  "whenStarted": "High School"
+}
+
+### Create a new Hobby
+POST {{FinalProject_HostAddress}}/api/Hobby
+Content-Type: application/json
+
+{
+  "name": "Reading",
+  "type": "Relaxing",
+  "timeSpent": 4,
+  "whenStarted": "Last Year"
+}
+
+### Create a new Hobby
+POST {{FinalProject_HostAddress}}/api/Hobby
+Content-Type: application/json
+
+{
+  "name": "Gaming",
+  "type": "Relaxing",
+  "timeSpent": 10,
+  "whenStarted": "Since a Kid"
+}
+
+### Create a new Hobby
+POST {{FinalProject_HostAddress}}/api/Hobby
+Content-Type: application/json
+
+{
+  "name": "Running",
+  "type": "Sport",
+  "timeSpent": 3,
+  "whenStarted": "Three Years Ago"
+}
+
+
+###
+
+### Update a Hobby
+PUT {{FinalProject_HostAddress}}/api/Hobby/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Basketball",
+  "type": "Sport",
+  "timeSpent": 7, // updated value
+  "continueHobby": true,
+  "whenStarted": "High School"
+}
+
+###
+
+### Delete a Hobby
+DELETE {{FinalProject_HostAddress}}/api/Hobby/2
+
+###
