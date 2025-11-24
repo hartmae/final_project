@@ -29,9 +29,9 @@ Content-Type: application/json
 
 {
   "fullName": "Josh Berger",
-  "birthdate": "2006-05-01T00:00:00",
-  "collegeProgram": "blank",
-  "yearInProgram": "blank"
+  "birthdate": "2003-08-22T00:00:00",
+  "collegeProgram": "Information Technology",
+  "yearInProgram": "Junior"
 }
 
 ### Create a new TeamMember
@@ -40,9 +40,9 @@ Content-Type: application/json
 
 {
   "fullName": "Peter Schuler",
-  "birthdate": "2006-05-01T00:00:00",
-  "collegeProgram": "blank",
-  "yearInProgram": "blank"
+  "birthdate": "2006-05-25T00:00:00",
+  "collegeProgram": "Information Technology",
+  "yearInProgram": "Sophomore"
 }
 
 ### Create a new TeamMember
@@ -74,7 +74,7 @@ Content-Type: application/json
 ###
 
 ### Delete a TeamMember
-DELETE {{FinalProject_HostAddress}}/api/TeamMembers/1
+DELETE {{FinalProject_HostAddress}}/api/TeamMembers/5
 
 ###
 
