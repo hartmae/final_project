@@ -87,7 +87,7 @@ namespace FinalProject.Controllers
                 return NotFound();
             }
 
-            _context.TeamMembers.Remove(food);
+            _context.Foods.Remove(food);
             await _context.SaveChangesAsync();
 
             return NoContent();

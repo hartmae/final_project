@@ -13,7 +13,7 @@ namespace FinalProject.Data
         public DbSet<TeamMember> TeamMembers { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Food> Foods { get; set; } 
-        public DbSet<Hobby> Hobby { get; set; }
+        public DbSet<Hobby> Hobbies { get; set; }
     }
 }
 
